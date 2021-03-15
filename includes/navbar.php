@@ -25,7 +25,7 @@
         <?php 
             if ($auth->isLoggedIn()) {
         ?>
-            <a class="navbar-item nav-link" href="home.php">Favourites</a>
+            <a class="navbar-item nav-link" href="favourite.php">Favourites</a>
         <?php } else { ?>
             <a class="navbar-item nav-link" href="login.php">Login</a>
             <a class="navbar-item nav-link" href="register.php">Register</a>

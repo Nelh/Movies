@@ -12,7 +12,7 @@
 <html lang="en">
 <head>
     <?php include('includes/head.php') ?>
-    <title>Dashboard</title>
+    <title>Favourites Movies</title>
 </head>
 <body>
     <div class="container">
@@ -21,7 +21,7 @@
 
         <div class="shadow-sm my-4">
             <div class="card-body">
-                <p class="pt-20px text-white"><?php echo $_SESSION['fname']; ?>. You have succesfully logged in!</p>
+                <p class="pt-20px text-white"><?php echo $_SESSION['fname']; ?>. You have successfully logged in!</p>
                 <p><a href="./core/f_logout.php?logout" class="btn btn-large">Logout</a></p>
             </div>
         </div>

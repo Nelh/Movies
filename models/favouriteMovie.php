@@ -20,7 +20,7 @@ Class FavouriteMovie {
         if($stmt->execute()) {
             $stmt->store_result();
             if($stmt->num_rows > 0) {
-                return "Movie already Inserted as favourite";
+                return "Movie already inserted as favourite";
             } else {
                 // insert New favourite Movie
                 $stmt = $this->db->prepare("INSERT INTO user_movies (user_id, movie_id, movie_type) VALUES (?,?,?)");
