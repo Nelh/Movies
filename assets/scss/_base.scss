@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: $dark;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.p-md-6rem {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
+.p-20px {
+    padding: 20px;
+}
+
+.pt-20px {
+    padding: 20px 0;
+}
+
+.pt-10px {
+    padding: 10px 0;
+}
+
+.p-y-30 {
+    padding: 30px 0;
+}
+
+.mt-10px {
+    margin: 10px 0;
+}
+
+.mw-md {
+    max-width: 576px;
+}
+
+.mw-60 {
+    max-width: 60%;
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+    }
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.center-y {
+    align-items: center;
+}
+
+.display-lg {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.display-md {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.text-white {
+    color: $white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-20px {
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}

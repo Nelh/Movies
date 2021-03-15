@@ -1,0 +1,148 @@
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-burger {
+  min-width: 3em;
+  height: 100%;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  background-color: gray;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.navbar-burger:hover {
+  background-color: gray;
+}
+
+.navbar-burger span {
+  height: 1px;
+  background-color: $dark;
+  width: 1.1em;
+  margin: 0.1em;
+}
+
+.navbar-item {
+  height: 100%;
+  min-height: 3em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $dark;
+  font-size: 15px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+a.navbar-item {
+
+  &:hover,
+  &:hover>p {
+    color: rgb(112, 112, 112);
+    background-color: #fbfbfb;
+  }
+}
+
+
+.navbar .navbar-menu {
+  display: none;
+}
+
+.navbar-menu.navbar-menu--active {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-menu .navbar-item {
+  color: #fff;
+  background-color: gray;
+  border-bottom: 1px solid rgba(231, 231, 231, 0.14);
+}
+
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    background: #2125294f;
+    // box-shadow: 0 0px 13px 2px #2125299f;
+  }
+
+  .navbar-search {
+    box-shadow: none;
+  }
+
+  .navbar .navbar-menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar-burger {
+    display: none;
+  }
+
+  .navbar.grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .navbar-menu .navbar-item {
+    background-color: transparent;
+  }
+}
+
+//////////////////////////////////////////////////////// 
+// Search Autocomplete
+
+#search {
+  position: relative;
+  width: 100% !important;
+
+  #search-input {
+    padding: 0 5%;
+    width: 100%;
+    height: 6vmin;
+    min-height: 50px;
+    border: none;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    outline: none;
+    color: $dark;
+    font-size: 15px;
+  }
+
+  .search-clear {
+    position: absolute;
+    visibility: hidden;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  #search-results {
+    position: absolute;
+    width: 100%;
+    padding: 0 5%;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0px 4px 15px 1px rgba(0, 0, 0, 0.2);
+
+    p {
+      border-bottom: 1px solid #eee;
+      padding-top: 10px;
+      padding-bottom: 15px;
+      text-decoration: none;
+      color: $dark;
+      font-size: 15px;
+      font-weight: bold;
+
+    }
+  }
+}
