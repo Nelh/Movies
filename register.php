@@ -13,7 +13,7 @@
         <h2 class="text-white p-y-30">Register</h2>
     </div>
     <?php if (isset($_GET['joined'])){ ?>
-        <p class="text-center">Succesfully registered. You can now <a href="login.php">login</a>.</p>
+        <p class="text-center text-white">Succesfully registered. You can now <a href="login.php">login</a>.</p>
     <?php } else { ?>
         <form class="col-xl-3 col-lg-4 col-10 mx-auto" method="POST" action="./core/f_register.php">
             <input type="text" class="form-control" name="fname" required autocomplete="fname" placeholder="Enter an firstname" autofocus>
