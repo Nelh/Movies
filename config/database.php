@@ -2,8 +2,8 @@
 
 ////////////////////////////////////////////////////////
 define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'nelh');
-define('DB_PASSWORD', 'esplight');
+define('DB_USERNAME', '');
+define('DB_PASSWORD', '');
 define('DB_DATABASE', 'movie');
 
 /////////////////////////////////////////////////////////

@@ -1,4 +1,4 @@
-# Movie App &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]
+# Movie App &middot; ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Requirements
 
@@ -20,7 +20,7 @@ define('DB_USERNAME', '');
 define('DB_PASSWORD', '');
 define('DB_DATABASE', 'movie');
 ```
-- Create a Database named movie and use the `movie.sql` dump to create the necessary tables.
+- Create a movie database and use the `movie.sql` in the root to create the necessary tables.
 
 
 ## Description
@@ -34,7 +34,7 @@ The App has a Tv Show section on the navigation menu where when you click it red
 
 I did find some limitation with the tmdb api, as it doesn't allow to define a specific set of movies to return in the request. so to counter this issue i did slice the result i received from the api to show nine thumbnail at the time and when you click the view more button it shows the rest.
 
-- i did implement an add / remove into favourites, but you need to login otherwise it just won't let you.
+I did implement an add / remove into favourites, but you need to login otherwise it just won't let you.
 
 
 I used PHP in the backend to create a simple login system where a user can login / register. that will allow them to add / remove their favourites movies to the list.
